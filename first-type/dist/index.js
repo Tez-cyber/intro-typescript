@@ -1,3 +1,6 @@
 "use strict";
+// DATA TYPES
 let id = 5;
-console.log(id);
+let company = "Tez-cyber";
+let isPublished = true;
+let x = "Hello";
