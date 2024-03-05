@@ -19,3 +19,7 @@ employee = [
     [2, "Mason"],
     [3, "Tez"]
 ]
+
+//Union ------ accepts multiple datatypes
+let pid: string | number
+pid = "22"

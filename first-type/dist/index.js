@@ -16,3 +16,6 @@ employee = [
     [2, "Mason"],
     [3, "Tez"]
 ];
+//Union ------ accepts multiple datatypes
+let pid;
+pid = "22";
