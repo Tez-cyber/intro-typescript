@@ -39,3 +39,15 @@ enum Direction2 {
 }
 
 console.log(Direction1.Up)
+
+// Objects 
+type User = {
+    id: number,
+    name: string
+}
+
+const user: User = {
+    id: 1,
+    name: "Ahmad"
+}
+console.log(user.name)
