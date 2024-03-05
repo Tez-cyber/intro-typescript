@@ -23,3 +23,19 @@ employee = [
 //Union ------ accepts multiple datatypes
 let pid: string | number
 pid = "22"
+
+//Enum
+enum Direction1 {
+    Up ,
+    Down,
+    Left,
+    Right
+}
+enum Direction2 {
+    Up = "Up",
+    Down = "Down",
+    Left = "Left",
+    Right = "Right"
+}
+
+console.log(Direction1.Up)
