@@ -49,3 +49,8 @@ function addNum(x, y) {
     return x + y;
 }
 console.log(addNum(1, 2));
+//Void --------------- it doesnt return any value 
+function log(message) {
+    console.log(message);
+}
+log("Hello");
