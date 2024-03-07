@@ -65,10 +65,20 @@ class Person {
         this.name = name;
     }
     /*
-        This method returns only string as passed from the interface
+        This method returns only string as
+        passed from the interface
     */
     register() {
         return `${this.name} is now registered`;
     }
 }
 const ahmad = new Person(1, "Ahmad");
+// Extending classes (Subclasses)
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(3, "Abdullah", "Dev");
+console.log(emp.register());

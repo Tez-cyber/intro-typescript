@@ -94,7 +94,7 @@ interface MathFunc {
 
 const add: MathFunc = (x: number, y: number): number => x + y
 
-//Classes
+//------------------------------------Classes
 interface PersonInterface {
     id: number
     name: string
@@ -112,7 +112,8 @@ class Person implements PersonInterface {
         this.name = name
     }
     /*
-        This method returns only string as passed from the interface
+        This method returns only string as 
+        passed from the interface
     */
     register() {
         return `${this.name} is now registered`
@@ -120,6 +121,18 @@ class Person implements PersonInterface {
 }
 
 const ahmad = new Person(1, "Ahmad")
+
+// Extending classes (Subclasses)
+class Employee extends Person {
+    position: string
+
+    constructor(id: number, name: string, position: string) {
+        super(id, name)
+        this.position = position
+    }
+}
+const emp = new Employee(3, "Abdullah", "Dev")
+console.log(emp.register())
 
 
 
