@@ -95,7 +95,13 @@ interface MathFunc {
 const add: MathFunc = (x: number, y: number): number => x + y
 
 //Classes
-class Person {
+interface PersonInterface {
+    id: number
+    name: string
+    register(): string
+}
+
+class Person implements PersonInterface {
     id: number
     name: string
     private age?: number
@@ -105,7 +111,9 @@ class Person {
         this.id = id
         this.name = name
     }
-
+    /*
+        This method returns only string as passed from the interface
+    */
     register() {
         return `${this.name} is now registered`
     }

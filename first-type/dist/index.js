@@ -59,12 +59,14 @@ const user1 = {
     name: "John"
 };
 const add = (x, y) => x + y;
-//Classes
 class Person {
     constructor(id, name) {
         this.id = id;
         this.name = name;
     }
+    /*
+        This method returns only string as passed from the interface
+    */
     register() {
         return `${this.name} is now registered`;
     }
