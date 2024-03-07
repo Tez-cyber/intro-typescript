@@ -70,4 +70,20 @@ function log(message: string | number): void {
 }
 log("Hello")
 
+// Interface
+interface UserInterface {
+    readonly id: number //cant be reassigned
+    name: string
+    age?: number // This is an optional property
+}
+const user1: UserInterface = {
+    id: 1,
+    name: "John"
+}
+
+
+// interface cant be used with Union
+
+
+
 

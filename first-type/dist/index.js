@@ -54,3 +54,8 @@ function log(message) {
     console.log(message);
 }
 log("Hello");
+const user1 = {
+    id: 1,
+    name: "John"
+};
+// interface cant be used with Union
