@@ -58,4 +58,4 @@ const user1 = {
     id: 1,
     name: "John"
 };
-// interface cant be used with Union
+const add = (x, y) => x + y;

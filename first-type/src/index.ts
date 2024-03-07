@@ -82,8 +82,16 @@ const user1: UserInterface = {
 }
 
 
-// interface cant be used with Union
+/*
+    Note:
+        interface cant be used with Union
+*/
 
+//---Interface with functions
+interface MathFunc {
+    (x: number, y: number): number
+}
 
+const add: MathFunc = (x: number, y: number): number => x + y
 
 
